@@ -3,21 +3,54 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Vítejte v lese">
-	<div class="container mx-auto px-4 py-12 text-center">
-		<h1 class="text-4xl md:text-6xl font-bold text-forest-green mb-6">
-			Přírodu dětem, <br class="hidden md:inline"/> děti přírodě!
-		</h1>
-		<p class="text-xl text-earth-brown max-w-2xl mx-auto mb-8">
-			Lesní mateřská škola pro děti z Mladé Boleslavi a okolí.
-			Místo, kde se učíme svobodě, zodpovědnosti a úctě k životu.
-		</p>
-		<div class="flex justify-center gap-4">
-			<a href="/kontakt" class="bg-forest-green text-white px-6 py-3 rounded-full font-bold hover:bg-opacity-90 transition shadow-lg">
-				Přijďte se podívat
-			</a>
-			<a href="/pribeh" class="border-2 border-forest-green text-forest-green px-6 py-3 rounded-full font-bold hover:bg-forest-green hover:text-white transition">
-				Zjistit více
-			</a>
+	<!-- Hero Section -->
+	<section class="relative h-[80vh] flex items-center justify-center bg-forest-green text-center overflow-hidden">
+		<!-- Background Image Placeholder (Nature) -->
+		<div class="absolute inset-0 z-0 opacity-40">
+			<img 
+				src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=1920&auto=format&fit=crop" 
+				alt="Děti v lese" 
+				class="w-full h-full object-cover"
+			/>
 		</div>
-	</div>
+
+		<div class="relative z-10 px-4 max-w-4xl mx-auto">
+			<h1 class="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+				Přírodu dětem, <br class="hidden md:inline"/> děti přírodě!
+			</h1>
+			<p class="text-xl md:text-2xl text-sand-cream mb-8 drop-shadow-md">
+				Lesní mateřská škola pro děti z Mladé Boleslavi a okolí.
+				Místo, kde se učíme svobodě, zodpovědnosti a úctě k životu.
+			</p>
+			<div class="flex flex-col md:flex-row justify-center gap-4">
+				<a href="/kontakt" class="bg-sand-cream text-forest-green px-8 py-4 rounded-full font-bold text-lg hover:bg-white transition shadow-xl transform hover:scale-105">
+					Přijďte se podívat
+				</a>
+				<a href="/pribeh" class="border-2 border-sand-cream text-sand-cream px-8 py-4 rounded-full font-bold text-lg hover:bg-sand-cream hover:text-forest-green transition shadow-lg">
+					Zjistit více
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Features / Philosophy Teaser -->
+	<section class="py-16 bg-sand-cream">
+		<div class="container mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
+			<div class="p-6">
+				<div class="text-5xl mb-4">🌲</div>
+				<h3 class="text-2xl font-bold text-forest-green mb-2">Každý den venku</h3>
+				<p class="text-earth-brown">Za každého počasí objevujeme svět. Imunita, odolnost, radost.</p>
+			</div>
+			<div class="p-6">
+				<div class="text-5xl mb-4">🤲</div>
+				<h3 class="text-2xl font-bold text-forest-green mb-2">Respektující přístup</h3>
+				<p class="text-earth-brown">Malá skupina dětí, individuální péče, partnerství místo drilu.</p>
+			</div>
+			<div class="p-6">
+				<div class="text-5xl mb-4">🥗</div>
+				<h3 class="text-2xl font-bold text-forest-green mb-2">Zdravý životní styl</h3>
+				<p class="text-earth-brown">Pohyb, zdravá strava a duševní pohoda jsou u nás na prvním místě.</p>
+			</div>
+		</div>
+	</section>
 </Layout>

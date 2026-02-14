@@ -1,0 +1,23 @@
+---
+const images = [
+  "https://images.unsplash.com/photo-1596464716127-f9a8625579c3?w=800&q=80",
+  "https://images.unsplash.com/photo-1476304864293-66c1f09e3204?w=800&q=80",
+  "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&q=80",
+  "https://images.unsplash.com/photo-1511497584788-876760111969?w=800&q=80",
+  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+  "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80"
+];
+---
+
+<div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 p-4">
+  {images.map((src, index) => (
+    <div class="break-inside-avoid rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+      <img 
+        src={src} 
+        alt={`Galerie ${index + 1}`} 
+        class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+        loading="lazy"
+      />
+    </div>
+  ))}
+</div>
