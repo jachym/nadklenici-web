@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest-green: #2F5233;
+  --color-earth-brown: #5D4037;
+  --color-sand-cream: #F5F5DC;
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  @apply bg-sand-cream text-earth-brown font-sans;
+}
