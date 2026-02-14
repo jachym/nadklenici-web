@@ -1,0 +1,24 @@
+---
+const events = [
+  { date: "1. 9. 2024", title: "Zahájení školního roku" },
+  { date: "28. 10. 2024", title: "Státní svátek (Zavřeno)" },
+  { date: "23. 12. 2024 - 3. 1. 2025", title: "Vánoční prázdniny" },
+  { date: "31. 1. 2025", title: "Pololetní prázdniny" },
+  { date: "Jaro 2025", title: "Jarní prázdniny (dle okresu)" },
+  { date: "30. 6. 2025", title: "Ukončení školního roku" },
+];
+---
+
+<div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-forest-green">
+  <h3 class="text-2xl font-bold text-forest-green mb-4 flex items-center gap-2">
+    📅 Harmonogram roku
+  </h3>
+  <ul class="space-y-3">
+    {events.map((event) => (
+      <li class="flex flex-col sm:flex-row justify-between border-b border-gray-100 pb-2 last:border-0">
+        <span class="font-bold text-earth-brown">{event.date}</span>
+        <span class="text-gray-700">{event.title}</span>
+      </li>
+    ))}
+  </ul>
+</div>
