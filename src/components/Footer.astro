@@ -1,0 +1,36 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-earth-brown text-sand-cream py-8 mt-12">
+  <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- Column 1: Identity -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">LMŠ Nad Klenicí</h3>
+      <p class="mb-4">Přírodu dětem, děti přírodě.</p>
+      <p class="text-sm opacity-80">&copy; {currentYear} Lesní mateřská škola Nad Klenicí, z.s.</p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div>
+      <h3 class="text-lg font-bold mb-4">Rychlé odkazy</h3>
+      <ul class="space-y-2">
+        <li><a href="/pribeh" class="hover:underline">O školce</a></li>
+        <li><a href="/info" class="hover:underline">Ceník a provoz</a></li>
+        <li><a href="/kontakt" class="hover:underline">Kontakt</a></li>
+        <li><a href="/eticky-kodex" class="hover:underline text-sm opacity-80">Etický kodex</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact -->
+    <div>
+      <h3 class="text-lg font-bold mb-4">Kontakt</h3>
+      <address class="not-italic space-y-2">
+        <p>📍 Zázemí: Jemníky</p>
+        <p>📧 <a href="mailto:info@nadklenici.cz" class="hover:underline">info@nadklenici.cz</a></p>
+        <p>📞 +420 123 456 789 (Doplnit)</p>
+      </address>
+    </div>
+  </div>
+</footer>
