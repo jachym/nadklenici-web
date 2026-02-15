@@ -10,3 +10,10 @@
 - **Routing**: Implemented dynamic `[slug].astro` page for rendering markdown content.
 - **Styling**: Added `@tailwindcss/typography` for beautiful markdown rendering.
 - **Status**: Core content pages are working.
+
+## 2026-02-14 (Phase 2.5 - Content Polish)
+- **Refinement**: Rewrote `pribeh.md` intro to be more emotional and welcoming.
+- **Feature**: Added "Day in the Forest" timeline to `pribeh.md`.
+- **Feature**: Added "Fear Busters" FAQ section to `info.mdx` (Rain, Ticks, Hygiene).
+- **Data**: Replaced all "Doplnit" placeholders with realistic dummy data (Pricing, Contacts, Map).
+- **Status**: Content is now emotionally resonant and trustworthy.
